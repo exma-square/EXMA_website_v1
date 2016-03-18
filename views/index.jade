@@ -1,0 +1,661 @@
+doctype html
+html(lang='zh-Hant-TW')
+  head
+    meta(charset='utf-8')
+    |     
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    |     
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    |     
+    title 創科資訊股份有限公司
+
+
+    link(rel="icon", type="image/png", href="images/favicon.png")
+    link(rel="icon", type="image/x-icon", href="images/favicon.ico")
+
+    link(href='assets/css/template.css', rel='stylesheet')
+    link(href='assets/css/custom.css', rel='stylesheet')
+    
+    // todo: ico
+
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      |       
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
+  |   
+  body
+    #page
+      header#header.site-header
+        nav#topbar.site-topbar.visible-lg.visible-md
+          .container
+            .row
+              .col-sm-6
+                i.fa.fa-phone-square
+                span.phone-number TEL (04)2201-9020
+              .social-links.col-sm-6
+                a(href='https://www.facebook.com/trunk.studio.tw')
+                  i.fa.fa-facebook
+                //a(href='#')
+                //  i.fa.fa-twitter
+                a(href='https://plus.google.com/b/100403838035146470024/')
+                  i.fa.fa-google-plus
+                //a(href='#')
+                //  i.fa.fa-pinterest
+        |         
+        nav#navbar.site-navbar.navbar.navbar-static-top(role='navigation')
+          
+          .container
+            if message != ''
+              .row.col-sm-12
+                .alert.alert-success(role='alert')
+                  p= message
+            .navbar-header
+              button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-collapse-1')
+                span.sr-only Toggle navigation
+                |                 
+                i.fa.fa-bars
+              h1.navbar-brand
+                img(src='images/logo.png', height=40)
+              fa.fa-bars-left
+            |             
+            #navbar-collapse-1.collapse.navbar-collapse
+              ul#navigation.nav.navbar-nav.navbar-right
+                li.active
+                  a.current(href='#header') 首頁
+                |                 
+                li
+                  a(href='#features') 服務項目
+                |                 
+                li
+                  a(href='#solutions') 解決方案
+                |                 
+                li
+                  a(href='#testimonials') 案例分享
+                |                 
+                li
+                  a(href='#blog') 課程活動
+                |                 
+                li
+                  a(href='#clients') 合作夥伴
+                |                 
+                li
+                  a(href='#contact') 聯絡方式
+      |       
+      main#main.site-main
+        section#carousel-1.carousel.slide.section-slide(data-ride='carousel')
+          .carousel-inner
+            .item.active(style='background: url(images/photo-1.jpg) no-repeat center; background-size: cover;')
+              .container
+                img(src='images/typo-1.png', alt='', style='max-width:85%')
+            .item(style='background: url(images/photo-2.jpg) no-repeat center; background-size: cover;')
+              .container
+                img(src='images/typo-2.png', alt='', style='max-width:85%')
+          a.left.carousel-control(href='#carousel-1', data-slide='prev')
+            span.fa.fa-chevron-left
+          a.right.carousel-control(href='#carousel-1', data-slide='next')
+            span.fa.fa-chevron-right
+        |         
+        section#intro.section.section-cta
+          .container
+            h2.section-title
+              span 關於創科資訊
+            .compact
+              p 創科資訊股份有限公司成立於 2015 年，由一群熱愛軟體設計的青年組成創新研發團隊，是一家年輕充滿活力與豐富創新創意的新創軟體公司。我們擁有專業跨領域的研發團隊以及充滿創造力的設計團隊，不僅以專業技術為導向，完成高品質的軟體專案要求，更兼具創意導向，提供創新多元的數位內容服務。
+              p 我們有多位資深軟體架構師、技術顧問與程式設計師，專注於 Web / App 相關的開發技術，並且不斷跟隨著時代演進更新技術，擅長的程式語言以 Java 與 JavaScript 為主，包括 Node.js 與 Spring Boot 等主流技術均能充分掌握，也有成熟的 ORM 實作搭配 MySQL 或 SQL Server 資料庫優化的實作能力，以及在 Linux 系統與 AWS 雲端平台部署應用系統的多年經驗。
+              p 我們協助客戶評估決策更好的軟體架構與規劃設計，並採用更有效率的方式完成開發實作。我們熟悉並貫徹實踐敏捷軟體開發流程，由經驗豐富的資深架構師與 Scrum Master 帶領，對軟體專案秉持專業負責的精神，加倍重視軟體品質與資訊安全，從自動化建置與測試到實踐測試驅動開發，搭配 Jenkins 與 Docker 提供持續整合與交付，也包括程式碼品質檢核或系統弱點測試。我們深知這些過去容易被忽略的細節，正是影響軟體品質重要的環節，我們相信只有把事情真正做對、做好，才能交付給客戶值得信賴的軟體。              
+              p We are a custom software development company that provides Java and JavaScript software development and consultations using agile methodology and best practices. We believe that software should respond to the needs of business, and we know that business needs are constantly changing. We change with You – we are Agile.
+            .main-action.row
+              .col-md-3.col-md-offset-3.col-sm-4.col-sm-offset-2
+                a.smooth-scroll.btn.btn-lg.btn-block.btn-danger(href='#solutions')  解決方案
+              |               
+              .col-md-3.col-sm-4
+                a.smooth-scroll.btn.btn-lg.btn-block.btn-default(href='#testimonials') 案例分享
+        |         
+        section#features.section.section-center.section-hilite.section-features
+          .container
+            h2.section-title
+              span 服務項目
+            |             
+            .row
+              .col-sm-3
+                .icon-wrap
+                  img(src='images/icon9.png', alt='')
+                h3 軟體開發
+                p.text-left 由我們專業的軟體研發團隊，協助您完成專案或產品開發。我們擅長的領域包括：數位內容平台、行動電商與物聯網應用，從設計規劃到程式開發都能提供多年經驗。
+              .col-sm-3
+                .icon-wrap
+                  img(src='images/icon8.png', alt='')
+                h3 系統整合
+                p.text-left 以創新營運模式提供多元服務之平台，快速整合各種資源，不僅滿足使用者之多樣資訊需求，加速帶動各領域之應用服務發展，共同掌握商機。
+              .col-sm-3
+                .icon-wrap
+                  img(src='images/icon4.png', alt='')
+                h3 企業培訓
+                p.text-left 我們提供自行研發的 AgileWorks 線上教材與平台，全面提升學習效率，課程涵蓋實踐敏捷開發流程所需要具備的知識觀念，以及熱門開發工具的實機操作。
+              .col-sm-3
+                .icon-wrap
+                  img(src='images/icon8.png', alt='')
+                h3 學校課程
+                p.text-left 我們有豐富的業師經驗，並與多所知名大專院校合作，提供基礎程式語言、網頁與手機程式設計教學輔導課程，提供業界最新實務經驗，並輔導學生取得專業認證。
+        section#solutions.section.section-portfolio
+          .container
+            h2.section-title
+              span 解決方案
+            .row
+              .col-xs-3
+                img(src='images/aws-consulting-partner.png', alt='')
+              .col-xs-9
+                h4 Deploy Applications on the AWS Cloud
+            hr
+            .row
+              .col-xs-3
+                img(src='images/nodejs.png', alt='')
+              .col-xs-9
+                h4 High Availability with Node.js
+            hr
+            .row
+              .col-xs-3
+                img(src='images/spring-io-logo.png', alt='')
+              .col-xs-9
+                h4 Enterprise Java Web
+            hr
+            .row
+              .col-xs-3
+                img(src='images/docker.png', alt='')
+              .col-xs-9
+                h4 Infrastructure as Code
+            hr
+            .row
+              .col-xs-3
+                img(src='images/jenkins.png', alt='')
+              .col-xs-9
+                h4 Continuous Integration with Jenkins CI
+            hr
+        // Project Modal
+        #project-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='project-modal-label', aria-hidden='true')
+          .modal-dialog
+            .modal-content
+              .modal-header
+                button.close(type='button', data-dismiss='modal', aria-hidden='true') &times;
+                |                 
+                h4#project-modal-label.modal-title Project title
+              |               
+              .modal-body
+                article.single-project
+                  .project-thumbnail
+                    #project-thumbnail-carousel-1.carousel.slide(data-ride='carousel')
+                      .carousel-inner
+                        .item.active
+                          img(src='http://placehold.it/800x600')
+                        |                         
+                        .item
+                          img(src='http://placehold.it/800x600')
+                        |                         
+                        .item
+                          img(src='http://placehold.it/800x600')
+                      |                       
+                      ol.carousel-indicators
+                        li.active(data-target='#project-thumbnail-carousel-1', data-slide-to='0')
+                        |                         
+                        li(data-target='#project-thumbnail-carousel-1', data-slide-to='1')
+                        |                         
+                        li(data-target='#project-thumbnail-carousel-1', data-slide-to='2')
+                      |                       
+                      a.left.carousel-control(href='#project-thumbnail-carousel-1', data-slide='prev')
+                        span.fa.fa-chevron-left
+                      |                       
+                      a.right.carousel-control(href='#project-thumbnail-carousel-1', data-slide='next')
+                        span.fa.fa-chevron-right
+                  |                   
+                  .row
+                    .col-md-4
+                      button.btn.btn-block.btn-primary(type='button') Launch Project
+                      |                       
+                      ul.list-unstyled.project-info
+                        li
+                          strong Type
+                          |  
+                          span.pull-right Web Design
+                        |                         
+                        li
+                          strong Client
+                          |  
+                          span.pull-right Google
+                        |                         
+                        li
+                          strong Year
+                          |  
+                          span.pull-right 2015
+                    |                     
+                    .col-md-8
+                      p
+                        | Suspendisse varius nisl nunc. Aenean in dictum nibh. Nullam congue facilisis purus porta ullamcorper. Aenean in consequat sapien. Cras orci augue, ultricies at luctus congue, dapibus sed magna. Vivamus consequat commodo pharetra. Maecenas sed tincidunt mi, quis accumsan nisi. Praesent ac porttitor massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur in bibendum tellus, vitae imperdiet mauris.
+        |         
+        section#testimonials.section.section-center.section-hilite.section-testimonial
+          .container
+            h2.section-title
+              span 學員分享
+            |             
+            i.fa.fa-quote-left.fa-3x
+            |             
+            #carousel-example-generic.carousel.slide(data-ride='carousel')
+              .carousel-inner
+                .item.active
+                  blockquote
+                    p 謝謝老師精闢解說，從基礎觀念到實際操作都有非常詳細的教學，經過這次的課程讓我學到新的程式語言，對我未來有大大的幫助。
+                    small 羅慈縈, TQC+ C# 學員
+                .item
+                  blockquote
+                    p 以往對於基本觀念只是一知半解，觀念不是很清楚，透過這次的研習，讓我對於 C# 的基本觀念比較清楚了，這次研習的基本概念、實際操作讓我受益良多，也對 C# 更感興趣了。
+                    small 吳采純, TQC+ C# 學員
+                .item
+                  blockquote
+                    p 本次的講師非常的認真，也很有耐心，從C#的基礎概念一步一步慢慢解釋，讓我學習到很多撰寫C#語言的技巧，課程中也分享了講師本身的經驗談，讓我受益良多。
+                    small 吳慧菱, TQC+ C# 學員
+                    
+                .item
+                  blockquote
+                    p workshop很讚，希望能提供去年的演講簡報提供參考！！
+                    small 彭一恩, 動手玩 Java 專案建置工具：JCConf
+                .item
+                  blockquote
+                    p 精實的實作課程
+                    small 陳德沛, Jenkins + Docker 實戰：資策會
+                .item
+                  blockquote
+                    p 有學到Jenkins+Docker的配合，命令列才是王道！
+                    small 洪紹鯤, Jenkins + Docker 實戰：資策會
+                .item
+                  blockquote
+                    p 非常棒！希望能有影片 
+                    small TrunkStudio x JenkinsCI 實戰講座：Zoom 線上課程
+                .item
+                  blockquote
+                    p 內容很棒!!!但是上課時數不足夠....
+                    small 林浩廷, Docker 實戰：中華電信研究院
+                .item
+                  blockquote
+                    p 很有幫助的課程，講解非常詳細
+                    small Jenkins 實戰：中華電信研究院
+                .item
+                  blockquote
+                    p 內容豐富，很棒!!!上課搭配實作的方式，有很大的幫助。
+                    small Jenkins 實戰：中華電信研究院
+
+
+              |               
+              ol.carousel-indicators
+                li.active(data-target='#carousel-example-generic', data-slide-to='0')
+                  img.img-circle(src='images/anonuser.png', width='64', height='64', alt='')
+                |                 
+                li(data-target='#carousel-example-generic', data-slide-to='1')
+                  img.img-circle(src='images/anonuser.png', width='64', height='64', alt='')
+                |                 
+                li(data-target='#carousel-example-generic', data-slide-to='2')
+                  img.img-circle(src='images/anonuser.png', width='64', height='64', alt='')
+        |         
+        section#pricing.section.section-center.section-pricing
+          .container
+            h2.section-title
+              span 課程內容
+            |                 
+            .pricing-table
+              .row
+                .col-md-3.col-sm-6
+                  .panel.panel-default
+                    header.panel-heading
+                      h1 免費講座
+                      |                                     
+                      .the-price
+                        | 2 小時 / 免費
+                    |                                 
+                    .panel-body
+                      table.table
+                        tbody
+                          tr
+                            td 快樂學 Git 版本控制
+                          tr.active
+                            td 第一次使用 Docker 就上手
+                          tr
+                            td JavaScript 基礎
+                    footer.panel-footer
+                      a.btn.btn-default(href='#') 立即預約
+                |                         
+                .col-md-3.col-sm-6
+                  .panel.panel-default
+                    header.panel-heading
+                      h1 基礎課程
+                      |                                     
+                      .the-price
+                        | 18 ~ 36 小時
+                    |                                 
+                    .panel-body
+                      table.table
+                        tbody
+                          tr
+                            td Spring Boot
+                          tr.active
+                            td Java 
+                          tr
+                            td Node.js
+                          tr.active
+                            td Groovy, Gradle, Grails
+                    |                                 
+                    footer.panel-footer
+                      a.btn.btn-default(href='#') 立即預約
+                |                         
+                .col-md-3.col-sm-6
+                  .panel.panel-primary
+                    header.panel-heading
+                      h1 實戰課程
+                      .the-price 18 ~ 36 小時
+                    .panel-body
+                      table.table
+                        tbody
+                          tr
+                            td Jenkins CI 從入門到實戰
+                          |                                             
+                          tr.active
+                            td TDD 專案實戰
+                          |                                             
+                          tr
+                            td RWD 網頁設計
+                          |                                             
+                          tr.active
+                            td Full Stack Developer
+                          |                                             
+                          tr
+                            td AWS 應用開發實作
+                    |                                 
+                    footer.panel-footer
+                      a.btn.btn-primary(href='#') 瞭解開課日期及費用
+                |                         
+                .col-md-3.col-sm-6
+                  .panel.panel-default
+                    header.panel-heading
+                      h1 認證課程
+                      |                                     
+                      .the-price
+                        | 18 ~ 36 小時
+                    |                                 
+                    .panel-body
+                      table.table
+                        tbody
+                          tr
+                            td TQC+ Java 專業認證
+                          tr.active
+                            td TQC+ C# 專業認證
+                          tr
+                            td TQC+ Android 專業認證
+                    footer.panel-footer
+                      a.btn.btn-default(href='#') 立即預約
+                .col-md-12.col-sm-12
+                  p 備註：課程內容如有調整以報名頁面公告為準。
+        |         
+        section#team.section.section-center.section-hilite.section-team
+          .container
+            h2.section-title
+              span 團隊成員
+            |                 
+            .row
+              .col-md-2.col-sm-4.col-xs-6
+                img.img-circle(src='images/portrait-smlsun.jpg')
+                h5 謝宗穎（Spooky）
+              .col-md-2.col-sm-4.col-xs-6
+                img.img-circle(src='images/portrait-lyhcode.jpg')
+                h5 林彥宏（Kyle）
+              .col-md-2.col-sm-4.col-xs-6
+                img.img-circle(src='images/portrait-caesar.jpg')
+                h5 戚務漢（Caesar）
+              .col-md-2.col-sm-4.col-xs-6
+                img.img-circle(src='images/portrait-kalvar.jpg')
+                h5 林國銘（Kalvar）
+              .col-md-2.col-sm-4.col-xs-6
+                img.img-circle(src='images/portrait-kueiyen.jpg')
+                h5 陳奎研（Kent）
+              .col-md-2.col-sm-4.col-xs-6
+                img.img-circle(src='images/portrait-fuyaode.jpg')
+                h5 傅耀德（Dan）
+              .col-md-2.col-sm-4.col-xs-6
+                img.img-circle(src='images/portrait-william.jpg')
+                h5 鄭煒霖（William）
+              .col-md-2.col-sm-4.col-xs-6
+                img.img-circle(src='http://www.ozeninc.com/wp-content/uploads/2015/08/Were-Hiring.png')
+                h5 Join us!
+        |         
+        section#blog.section.section-blog
+          .container
+            h2.section-title
+              span 課程報名
+            |             
+            .row
+              .col-md-6
+                article.hentry.post
+                  .row
+                    .entry-thumbnail.col-lg-4.col-md-5.col-sm-4.col-xs-3
+                      a.hover-effect(href='#')
+                        img(src='images/docker-square.png', alt='')
+                        |                         
+                        span.overlay
+                          i.fa.fa-plus
+                    |                     
+                    .col-lg-8.col-md-7.col-sm-8.col-xs-9
+                      header.entry-header
+                        h2.entry-title
+                          a(href='#') 第一次使用 Docker 就上手
+                        |                         
+                        .entry-meta
+                          | 講師：
+                          a(href='#') 謝宗穎
+                          | 
+                          span.label.label-danger 免費
+                          | 
+                          span.label.label-info 台中場
+                      |                       
+                      .entry-content
+                        p 
+                        p Docker 是一個開源專案，原始碼放在github上面做維護，支援多平台，從筆電到公、私有雲上能進行快速部署輕量、獨立的作業環境。Docker 使用 Linux 核心中的功能，Namespace 及 Control Groups (cgroups) 等，來達到建置獨立的環境及控制 CPU 、Memory 、網路等資源。
+                        a.more(href='http://trunk-studio.kktix.cc/events/onedocker', target='_blank')
+                          span.btn.btn-primary 立即前往 KKTIX 報名（免費）
+              |               
+              .col-md-6
+                article.hentry.post
+                  .row
+                    .entry-thumbnail.col-lg-4.col-md-5.col-sm-4.col-xs-3
+                      a.hover-effect(href='#')
+                        img(src='images/jenkins-square.png', alt='')
+                        |                         
+                        span.overlay
+                          i.fa.fa-plus
+                    |                     
+                    .col-lg-8.col-md-7.col-sm-8.col-xs-9
+                      header.entry-header
+                        h2.entry-title
+                          a(href='#') Jenkins CI 從入門到實戰
+                        .entry-meta
+                          | By 
+                          a(href='#') 講師：謝宗穎
+                      |                       
+                      .entry-content
+                        p 已經瞭解持續整合的重要性，卻不知道如何實際應用嗎？
+                        p 持續整合是讓系統開發在快速變動的需求下，仍能維持高軟體品質的重要關鍵，而 Jenkins 便是實現 CI 的首選工具，透過此自動化的軟體建置工具讓企業能快速驗證軟體版本演進的缺失，更能方便地整合現有各種原始碼管理方案以及各種軟體建置方法。
+                        a.more(href='#')
+                          span.btn.btn-default 尚未開放
+        |         
+        section#clients.section.section-hilite.section-our-clients
+          .container
+            h2.section-title
+              span 合作夥伴與客戶
+            |             
+            .row
+              .col-md-2.col-sm-4.col-xs-6
+                a(href='#')
+                  img(src='images/aws-consulting-partner-square.png', alt='')
+              .col-md-2.col-sm-4.col-xs-6
+                a(href='#')
+                  img(src='images/agricloud-logo.jpg', alt='')             
+              .col-md-2.col-sm-4.col-xs-6
+                a(href='#')
+                  img(src='images/tqc-plus-logo.png', alt='')
+              .col-md-2.col-sm-4.col-xs-6
+                a(href='#')
+                  img(src='images/csie-csu-logo.jpg', alt='')
+              .col-md-2.col-sm-4.col-xs-6
+                a(href='#')
+                  img(src='images/HMElogo.png', alt='')
+              .col-md-2.col-sm-4.col-xs-6
+                a(href='#')
+                  img(src='images/ITHOMElogo.png', alt='')
+              .col-md-2.col-sm-4.col-xs-6
+                a(href='#')
+                  img(src='images/ironyunlogo.png', alt='')
+              .col-md-2.col-sm-4.col-xs-6
+                a(href='#')
+                  img(src='images/itrilogo.png', alt='')
+              .col-md-2.col-sm-4.col-xs-6
+                a(href='#')
+                  img(src='images/ltulogo.png', alt='')
+              .col-md-2.col-sm-4.col-xs-6
+                a(href='#')
+                  img(src='images/taiwanmobilelogo.png', alt='')
+              .col-md-2.col-sm-4.col-xs-6
+                a(href='#')
+                  img(src='images/tradevanlogo.png', alt='')
+              .col-md-2.col-sm-4.col-xs-6
+                a(href='#')
+                  img(src='images/yuntechlogo.png', alt='')
+              .col-md-2.col-sm-4.col-xs-6
+                a(href='#')
+                //  img(src='http://placehold.it/640x480', alt='')
+              .col-md-2.col-sm-4.col-xs-6
+                a(href='#')
+                //  img(src='http://placehold.it/640x480', alt='')
+        |         
+        section#contact.section.section-center.section-contact
+          .container
+            h2.section-title
+              span 訂閱課程通知
+            |             
+            p 只要留下您的聯絡方式，我們會以簡訊及 E-Mail 通知您最新的講座及課程資訊！           
+            .main-action
+              form(role='form' action='/contact' method='post')
+                .row
+                  .col-sm-6
+                    .form-group
+                      label.sr-only Subject
+                      |                       
+                      input.form-control(type='text', name='name', placeholder='姓名')
+                    |                     
+                    .form-group
+                      label.sr-only Name
+                      |                       
+                      input.form-control(type='text', name='telphone', placeholder='手機號碼')
+                    |                     
+                    .form-group
+                      label.sr-only Email
+                      |                       
+                      input.form-control(type='email', name='email', placeholder='E-Mail 信箱')
+                  |                   
+                  .col-sm-6
+                    .form-group
+                      label.sr-only Message
+                      |                       
+                      textarea.form-control(placeholder='留言訊息', name='message', style='height: 100px', rows='6')
+                |                 
+                button.btn.btn-default(type='submit') 訂閱通知
+                
+            hr
+            .row
+              .col-sm-6
+                h3 交通指南
+                ul.text-left
+                  li 教室位於「台中市西區台灣大道二段2號16F-1」，近五權路口，樓下是彰化銀行。
+                  li 從台中火車站或朝馬轉運站，轉乘台中市公車，建議搭乘300路（BRT藍線），請在「茄苳腳站」下車，步行約一分鐘即可抵達。
+                  li 國道三請下台中交流道（原中港交流道）。
+                  li 74快速道路請下「西屯二」交流道。
+                  li 大樓後方博館二街設有機車停車格，汽車建議停至嘟嘟房收費停車場。
+              .col-sm-6
+                img(src='images/map-1.png', alt='')
+      |       
+      footer#footer.site-footer
+        .container
+          #sidebar-footer-1
+            .row
+              aside.widget.col-md-3.col-sm-6
+                h5.widget-title 關於我們
+                p.text-left 創科資訊公司成立於2015年，選擇台中作為研發基地，合作夥伴來自兩岸三地，引進國內外不同領域的優質講座與課程，並專注於數位內容與學習系統開發。
+              aside.widget.col-md-3.col-sm-6
+                h5.widget-title 台中教育訓練中心
+                p.text-left 提供最多可容納30人的教室空間，位於台中市區交通便利的台灣大道上，鄰近台中車站與朝馬轉運站，提供課程講座所需的無線網路與投影設備。
+              aside.widget.col-md-3.col-sm-6
+                h5.widget-title 免費咖啡供應
+                p.text-left 我們的辦公室有新鮮現磨的精品手沖咖啡，無限量供應，歡迎來喝杯咖啡與我們一起交流！
+              aside.widget.col-md-3.col-sm-6
+                h5.widget-title 訂閱電子報
+                .input-group
+                  input.form-control(type='text', placeholder='輸入 E-Mail')
+                  span.input-group-btn
+                    button.btn.btn-danger(type='button')
+                      i.fa.fa-arrow-right
+                |                 
+                ul.social-links
+                  li
+                    a(href='https://www.facebook.com/trunk.studio.tw')
+                      i.fa.fa-facebook
+                  |                   
+                  li
+                    a(href='#')
+                      i.fa.fa-twitter
+                  |                   
+                  li
+                    a(href='https://plus.google.com/b/100403838035146470024/')
+                      i.fa.fa-google-plus
+                  |                   
+                  li
+                    a(href='#')
+                      i.fa.fa-pinterest
+          #sidebar-footer-2
+            .row
+              aside.widget.col-sm-6
+                h5.widget-title 實習心得
+                |                 
+                .tweet
+                  .text-left 謝謝老師精闢解說，從基礎觀念到實際操作都有非常詳細的教學，經過這次的課程讓我學到新的程式語言，對我未來有大大的幫助。
+                  br
+                  | &ndash; 羅慈縈 &ndash;
+              |               
+              aside.widget.widget_flickr.col-sm-6
+                h5.widget-title 活動花絮
+                .row
+                  .col-sm-4
+                    img.img-thumbnail(src='images/activity-1.jpg')
+                    br
+                    small JavaScript 社群活動
+                  .col-sm-4
+                    img.img-thumbnail(src='images/activity-2.jpg')
+                    br
+                    small 手沖精品咖啡課程
+                  .col-sm-4
+                    img.img-thumbnail(src='images/activity-3.jpg')
+                    br
+                    small 香港記憶學案課程
+          .copyright
+            ul
+              li 電話：(04)2201-9020
+              li Email：contact@trunk-studio.com
+              li 統編：54891351
+              li 地址：403 台中市西區台灣大道二段2號16F-1
+              li &copy; 2015 Trunk Studio All rights reserved
+              li
+                a(href='http://trunk-studio.com') 創科資訊股份有限公司
+                | 版權所有
+    |     
+    .scroll-to-top(data-spy='affix', data-offset-top='200')
+      a.smooth-scroll(href='#page')
+        i.fa.fa-arrow-up
+    script(type='text/javascript', src='https://code.jquery.com/jquery-1.10.2.min.js')
+    script(type='text/javascript', src='assets/js/bootstrap-3.1.1.min.js')
+    script(type='text/javascript', src='assets/js/jquery.isotope.min.js?v=1.5.26')
+    script(type='text/javascript', src='assets/js/jquery.singlePageNav.min.js')
+    script(type='text/javascript', src='assets/js/main.js')
